@@ -6,12 +6,14 @@ import qiankun from "vite-plugin-qiankun";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/app-vue3/' : '/',
   plugins: [
     vue(),
     qiankun("app-vue3", {
       useDevMode: true,
     }),
   ],
+
   server: {
     port: 8083,
     headers: {

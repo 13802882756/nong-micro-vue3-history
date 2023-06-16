@@ -21,8 +21,9 @@ function render(props = {}) {
 const initQianKun = () => {
   renderWithQiankun({
     mount(props) {
+      const { container } = props;
       console.log("子应用重新挂载");
-      render(props);
+      render(container);
     },
 
     bootstrap() {},
