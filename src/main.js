@@ -15,7 +15,7 @@ function render(props = {}) {
   // 为了避免根id#app与其他DOM冲突，需要限制查找范围
   instance = createApp(App)
     .use(router)
-    .mount(container ? container.querySelector("#app") : "#app");
+    .mount(container ? container.querySelector("#micro-app") : "#micro-app");
 }
 
 const initQianKun = () => {

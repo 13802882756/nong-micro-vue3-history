@@ -4,8 +4,8 @@ import TheWelcome from "./components/TheWelcome.vue";
 </script>
 
 <template>
-  <div id="app">
-    vue子应用
+  <div id="micro-app">
+    vue3子应用
     <router-view></router-view>
   </div>
 </template>
