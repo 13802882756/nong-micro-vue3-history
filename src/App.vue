@@ -5,7 +5,7 @@ import TheWelcome from "./components/TheWelcome.vue";
 
 <template>
   <div id="micro-app">
-    vue3子应用
+    vue3子应用-vueroute基于history模式，利于SEO
     <router-view></router-view>
   </div>
 </template>
