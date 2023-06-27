@@ -10,7 +10,6 @@ import {
 let instance = null;
 
 function render(props = {}) {
-  console.log(props, "propssss");
   const { container } = props;
   // 为了避免根id#app与其他DOM冲突，需要限制查找范围
   instance = createApp(App)
