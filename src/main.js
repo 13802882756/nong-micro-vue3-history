@@ -2,6 +2,8 @@ import "./assets/main.css";
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
+import ElementPlus from 'element-plus'
+import "element-plus/dist/index.css";
 import {
   renderWithQiankun,
   qiankunWindow,
@@ -13,7 +15,7 @@ function render(props = {}) {
   const { container } = props;
   // 为了避免根id#app与其他DOM冲突，需要限制查找范围
   instance = createApp(App)
-    .use(router)
+    .use(router).use(ElementPlus)
     .mount(container ? container.querySelector("#micro-app") : "#micro-app");
 }
 
@@ -55,5 +57,6 @@ const initQianKun = () => {
 //   instance.$el.innerHTML = "";
 //   instance = null;
 // }
+
 // createApp(App).use(router).mount('#app')
 qiankunWindow.__POWERED_BY_QIANKUN__ ? initQianKun() : render();

@@ -1,13 +1,13 @@
 <script setup>
 import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
 </script>
 
 <template>
   <div id="micro-app">
-    vue3子应用-vueroute基于history模式，利于SEO
-    <div class="car"></div>
-    <img style="width: 100%" src="./assets/mzd3.jpeg">
+  
+    vue3子应用-vueroute基于history模式
+    <!-- <div class="car"></div> -->
+    <img style="width: 100px; height: auto" src="./assets/mzd3.jpeg" />
     <router-view></router-view>
   </div>
 </template>
